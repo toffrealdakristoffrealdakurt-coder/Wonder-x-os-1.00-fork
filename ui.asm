@@ -66,5 +66,5 @@ clear_workspace_area:
     int 0x10
     ret
 
-ui_header_title  db ' HYPER X OS 1.00  |  System Integrity: Secure  | Platform: Hybrid', 0
+ui_header_title  db ' Wonder X OS 1.00  |  System Integrity: Secure  | Platform: Hybrid', 0
 ui_footer_text   db ' Shortcuts: Type "theme" to alter system palette | "help" for modules', 0
