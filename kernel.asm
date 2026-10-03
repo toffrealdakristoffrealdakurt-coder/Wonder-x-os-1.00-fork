@@ -227,7 +227,7 @@ sector_buffer: times 512 db 0
 file_contents_buffer: times 512 db 0  
 
 ; --- System Global Core Strings ---
-prompt_str      db 'HXOS> ', 0
+prompt_str      db 'WXOS> ', 0
 newline_str     db 13, 10, 0
 page_pause_msg  db 13, 10, '[WORKSPACE FULL] Press any key to flip page...', 0
 err_cmd_msg     db 'ERROR: Unknown module command parsing parameter string.', 13, 10, 0
