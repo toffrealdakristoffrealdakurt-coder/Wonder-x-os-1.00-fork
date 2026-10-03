@@ -1,4 +1,4 @@
-# ⚡ HYPER X OS 1.00 (HXOS)
+# ⚡ Wonder X OS 1.00 (WXOS)
 
 An ultra-lightweight, high-performance, bare-metal x86 Operating System written completely in **Pure Assembly Language**. Inspired by total architectural independence and a rejection of modern software bloat, **HXOS** bypasses standard commercial operating system restrictions to command physical hardware registers directly.
 
@@ -55,7 +55,7 @@ dd if=/dev/zero of=fake_disk.img bs=1M count=32
 ### 2. The Comprehensive One-Line Build and Emulation Pipeline
 To purge prior binaries, assemble your 64-sector bootstrap sector, compile the multi-module 32KB kernel, merge the tracks, and launch the virtual environment with both your system image and your sandbox testing disk attached cleanly, run this single terminal chain:
 ```bash
-rm -f boot.bin kernel.bin hyperx_os.img && nasm -f bin boot.asm -o boot.bin && nasm -f bin kernel.asm -o kernel.bin && cat boot.bin kernel.bin > hyperx_os.img && qemu-system-i386 -drive file=hyperx_os.img,format=raw,index=0,media=disk -drive file=fake_disk.img,format=raw,index=1,media=disk
+rm -f boot.bin kernel.bin wonderx_os.img && nasm -f bin boot.asm -o boot.bin && nasm -f bin kernel.asm -o kernel.bin && cat boot.bin kernel.bin > wonderx_os.img && qemu-system-i386 -drive file=wonderx_os.img,format=raw,index=0,media=disk -drive file=fake_disk.img,format=raw,index=1,media=disk
 ```
 
 ### 3. Verification of the Hardware Installer
